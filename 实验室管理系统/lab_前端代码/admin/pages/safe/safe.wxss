@@ -1,0 +1,7 @@
+@import '/pages/admNotice/admNotice'
+.pub_img1{
+  left: 200rpx;
+}
+.demo_txt2{
+  margin-left: 60%;
+}

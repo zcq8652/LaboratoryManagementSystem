@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rjxy.model.Student">
+	<!-- 用户登陆 -->
+	<select id="load" parameterType="String" resultType="com.rjxy.model.Student">
+		select * from t_user_student where u_Id=#{u_Id}
+	</select>
+	<!-- 用户注册 -->
+	<update id="update" parameterType="com.rjxy.model.Student">
+		update t_user_student set u_name=#{u_name},u_password=#{u_password},u_position=#{u_position} where u_Id=#{u_Id}
+	</update>
+	<!-- 用户修改密码 -->
+	<update id="updatePassword" parameterType="com.rjxy.model.Student">
+		update t_user_student set u_password=#{u_password} where u_Id=#{u_Id}
+	</update>
+</mapper>

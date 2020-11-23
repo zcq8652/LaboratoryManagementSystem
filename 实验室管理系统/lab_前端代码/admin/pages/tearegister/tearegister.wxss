@@ -1,0 +1,2 @@
+@import "/pages/template/template";
+@import "/pages/sturegister/sturegister";

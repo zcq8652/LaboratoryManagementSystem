@@ -1,0 +1,13 @@
+@import "/pages/admNotice/admNotice";
+.pub_img1{
+  left: 190rpx;
+}
+.wait{
+  position: absolute;
+  top: 45rpx;
+  left: 35%;
+  width: 200rpx;
+}
+.demo_txt1, .demo_txt2{
+  opacity: .4;
+}

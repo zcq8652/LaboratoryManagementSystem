@@ -1,0 +1,4 @@
+<view>申报人：{{fault.data.f_u_name}}</view>
+<view>申报人学号/工号：{{fault.data.f_u_Id}}</view>
+<view>申报日期：{{fault.data.f_date}}</view>
+<view>申报内容：{{fault.data.f_content}}</view>

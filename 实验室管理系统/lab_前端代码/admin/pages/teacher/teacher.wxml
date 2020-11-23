@@ -1,0 +1,52 @@
+<import src="/pages/template/template"/>
+<component-tag-name></component-tag-name>
+<view class="center">
+  <swiper class="lunBo" indicator-dots circular>
+    <swiper-item wx:for="{{lunImg}}">
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="page-section-spacing">
+      <scroll-view class="scroll-view_H" scroll-x="true">
+          <navigator id="demo1" url="/pages/location/location">
+            <image src="/images/kaoqin.jpg" class="demo_img"></image>
+            <text class="d_txt1">考勤情况</text>
+          </navigator> 
+          <view id="demo3">
+            <image src="/images/weisheng.jpg" class="demo_img"></image>
+            <text class="d_txt3">卫生值日</text>
+          </view>
+          <navigator id="demo4" url="/pages/fault/fault">
+            <image src="/images/guzhang.jpg" class="demo_img"></image>
+            <text class="d_txt4">设备故障申报</text>
+          </navigator>
+          <navigator id="demo5" url="/pages/changeCourse/changeCourse">
+            <image src="/images/class.jpg" class="demo_img"></image>
+            <text class="d_txt5">调停课申请</text>
+          </navigator>
+          <navigator id="demo6" url="/pages/notice/notice">
+            <image src="/images/gonggao.jpg" class="demo_img"></image>
+            <text class="d_txt6">公告</text>
+          </navigator> 
+          <navigator id="demo7" url="/pages/courseTable/courseTable">
+            <image src="/images/course.jpg" class="demo_img"></image>
+            <text class="d_txt7">课表</text>
+          </navigator>
+      </scroll-view>
+  </view>
+  <view class="pub">
+    <text class="pub_txt">公告</text>
+    <image src="/images/pub_img.png" class="pub_img1"></image>
+    <navigator url="/pages/notice/notice"><text class="more">更多 ></text></navigator>
+    <view class="demo_box">
+      <view class="demo" hover-class="demo_hover" hover-stop-propagation bindtap="queryItemClick" wx:for="{{noticeArr}}" data-text="{{item.n_content}}">
+        <view class="demo_txt1"><text decode="true">&emsp;&emsp;{{item.n_content}}</text></view>
+        <view class="demo_txt2">发布日期：{{item.n_date}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="blank">
+</view>
+<template is="footer"/>
+

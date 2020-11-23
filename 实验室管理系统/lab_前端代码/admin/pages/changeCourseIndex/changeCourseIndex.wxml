@@ -1,0 +1,16 @@
+<view>申请人：{{tas.data.t_name}}</view>
+<view>申请人工号：{{tas.data.t_Id}}</view>
+<view>申请日期：{{tas.data.ta_date}}</view>
+<view>申请内容：{{tas.data.ta_content}}</view>
+<block wx:if="{{tas.data.ta_state == '2'}}">
+  <view>审核结果：待教学院长审核中</view>
+</block>
+<block wx:elif="{{tas.data.ta_state == '1'}}">
+  <view>审核结果：待实验室主任审核中</view>
+</block>
+<block wx:elif="{{tas.data.ta_state == '0'}}">
+  <view>审核结果：已通过</view>
+</block>
+<block wx:else>
+  <view>审核结果：未通过</view>
+</block>

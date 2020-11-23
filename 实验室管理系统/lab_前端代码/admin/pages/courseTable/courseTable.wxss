@@ -1,0 +1,119 @@
+.courseTable{
+  margin-top: 10rpx;
+  border: 1rpx solid #ccc;
+  width: 100%;
+}
+.tr1, .tr2, .tr3, .tr4, .tr5, .tr6, .tr7{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tr2, .tr3{
+  background-color: #DEFFEC;
+} 
+.tr4, .tr5{
+  background-color: #FFEEDE;
+}
+.tr6, .tr7{
+  background-color: #DDECFF;
+}
+.th1{
+  width: 18%;
+  display: block;
+  font-size: 15rpx;
+  border-right: 1rpx solid #ccc;
+  text-align: center;
+  background-color: #f4f4f4;
+  justify-content: center;
+}
+.th{
+  width: 11.7%;
+  text-align: center;
+  background-color: #f4f4f4;
+  font-size: 15rpx;
+  border-right: 1rpx solid #ccc;
+  justify-content: center;
+}
+.two{
+  width: 18%;
+}
+.td1{
+  border-top: 1rpx solid #ccc;
+  border-right: 1rpx solid #ccc;
+  width: 20%;
+  font-size: 15rpx;
+  text-align: center;
+  padding-top: 300rpx;
+  justify-content: center;
+  float: left;
+}
+.td2{
+  border-right: 1rpx solid #ccc;
+  width: 20%;
+  font-size: 15rpx;
+  text-align: center;
+  padding-bottom: 300rpx;
+  justify-content: center;
+  float: left;
+}
+.td3{
+  border-right: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+  font-size: 15rpx;
+  width: 80%;
+  padding-top: 148rpx;
+  padding-bottom: 148rpx;
+  text-align: center;
+  justify-content: center;
+  margin-left: 20%;
+}
+.one{
+  width: 82%;
+}
+.td{
+  width: 14.28%;
+  height: 100%;
+  text-align: center;
+  border-top: 1rpx solid #ccc;
+  border-right: 1rpx solid #ccc;
+  font-size: 15rpx;
+  color: #fff;
+  justify-content: center;
+  float: left;
+  z-index: 3;
+  box-sizing: border-box;
+  word-break:break-all;
+  padding: 5rpx;
+}
+.td text{
+  width: 100%;
+  height: 100%;
+  font-size: 15rpx;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  display: block;
+  word-break:break-all;
+}
+.btn_box{
+  width: 100%;
+}
+.btn{
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  width: 25%;
+  height: 50rpx;
+  background-color: #1296db;
+  font-size: 18rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 12rpx;
+  float: left;
+}
+.demo{
+  margin-top: 10rpx;
+  width: 10rpx;
+  height: 50rpx;
+}

@@ -1,0 +1,62 @@
+/* pages/notice/notice.wxss */
+.pub_txt{
+  position: absolute;
+  top: 20rpx;
+  left: 35rpx;
+  font-size: 40rpx;
+}
+.pub_img1{
+  position: absolute;
+  top: 18rpx;
+  left: 110rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.admNotice_blue_bar{
+  position: absolute;
+  top: 100rpx;
+  width: 100%;
+  height: 20rpx;
+  border: 1rpx solid powderblue;
+  background-color: powderblue;
+}
+.demo_fa{
+  position: absolute;
+  top: 120rpx;
+  width: 100%;
+  min-height: 100%;
+  background-color: powderblue;
+  border-bottom: 20rpx solid powderblue;
+}
+.demo{
+  margin-left: 2%;
+  width: 98%;
+  height: 200rpx;
+  border-top: 1rpx dotted powderblue;
+  background-color: #fff;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+}
+.demo_txt1{
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  width: 92%;
+  height: 60%;
+  white-space: pre-wrap;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3; 
+}
+.demo_txt2{
+  margin-top: 20rpx;
+  margin-left: 69%;
+  font-size: 26rpx;
+  color: dimgray;
+}
+.demo_hover{
+  background-color:powderblue;
+}

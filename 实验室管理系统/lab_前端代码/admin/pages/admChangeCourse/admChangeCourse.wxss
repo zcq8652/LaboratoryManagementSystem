@@ -1,0 +1,42 @@
+@import "/pages/admNotice/admNotice";
+.pub_img1{
+  left: 190rpx;
+}
+.wait{
+  position: absolute;
+  top: 45rpx;
+  left: 35%;
+  width: 200rpx;
+}
+.demo_txt1, .demo_txt2{
+  opacity: .4;
+}
+.demo_txt3{
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  width: 92%;
+  height: 60%;
+  white-space: pre-wrap;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3; 
+}
+.demo_txt4{
+  margin-top: 20rpx;
+  margin-left: 69%;
+  font-size: 26rpx;
+  color: dimgray;
+}
+.dot{
+  position: absolute;
+  top: 40%;
+  width: 20rpx;
+  height: 20rpx;
+  border: 1rpx solid red;
+  background-color: red;
+  border-radius: 50%;
+}

@@ -1,0 +1,18 @@
+<text class="pub_txt">卫生记录</text>
+<image src="/images/hygiene.png" class="pub_img1"></image>
+<navigator url="/pages/addHygiene/addHygiene"><image src="/images/noticeadd.png" class="notice_add"></image></navigator>
+<view class="admNotice_blue_bar"></view>
+<view class="admNotice_demo">
+    <scroll-view class="admNotice_scroll" scroll-x="true" wx:for="{{hygieneArr}}">
+      <view class="demo" hover-class="demo_hover" hover-stop-propagation bindtap="queryItemClick" data-text="{{item}}">
+        <view class="img_box">
+          <image src="{{item.imgsPath[0]}}" class="img"></image>
+        </view>
+        <view class="demo_txt1"><text decode="true">{{item.h_content}}</text></view>
+        <view class="demo_txt2">清扫日期：{{item.h_time}}</view>
+      </view>
+      <block wx:if="{{u_rank == '1'}}">
+        <view class="demo_del" bindtap="deleteHygiene" data-hid="{{item.h_Id}}">删除</view>
+      </block>
+    </scroll-view>
+</view>

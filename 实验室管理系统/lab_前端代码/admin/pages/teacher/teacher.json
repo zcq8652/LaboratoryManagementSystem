@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "component-tag-name": "/pages/component/component"
+  },
+  "navigationBarTitleText": "实验室管理平台"
+}

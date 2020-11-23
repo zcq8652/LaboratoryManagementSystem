@@ -1,0 +1,53 @@
+<text class="pub_txt">申请记录</text>
+<image src="/images/changeCourse.png" class="pub_img1"></image>
+<view class="admNotice_blue_bar"></view>
+<block wx:if="{{u_rank == '0'}}">
+  <view class="admNotice_demo">
+    <scroll-view class="admNotice_scroll" scroll-x="true" wx:for="{{adminAdjusts}}">
+      <view class="demo" hover-class="demo_hover" hover-stop-propagation bindtap="adminQueryItemClick" data-text="{{item}}">
+        <view class="demo_txt3">
+          <text decode="true">&emsp;&emsp;{{item.aa_content}}</text>
+        </view>
+        <view class="demo_txt4">申请日期：{{item.aa_date}}</view>
+      </view>
+      <view class="dot" wx:if="{{item.aa_state == '1'}}"></view>
+      <view class="demo_del" bindtap="deleteRequest" data-adid="{{item.aa_Id}}">删除</view>
+    </scroll-view>
+  </view>
+</block>
+<block wx:else>
+  <view class="admNotice_demo">
+    <scroll-view class="admNotice_scroll" scroll-x="true" wx:for="{{adjusts}}">
+      <view class="demo" hover-class="demo_hover" hover-stop-propagation bindtap="queryItemClick" data-text="{{item}}">
+        <view class="demo_txt1">
+          <text decode="true">&emsp;&emsp;{{item.ad_content}}</text>
+        </view>
+        <view class="demo_txt2">申请日期：{{item.ad_date}}</view>
+      </view>
+      <block wx:if="{{u_rank == '2'}}">
+        <block wx:if="{{item.ad_state == '2'}}">
+          <image src="/images/wait.png" class="wait" mode="widthFix"></image>
+        </block>
+        <block wx:else>
+          <image src="/images/complete.png" class="wait" mode="widthFix"></image>
+        </block>
+      </block>
+      <block wx:elif="{{u_rank == '1'}}">
+        <block wx:if="{{item.ad_state == '1'}}">
+          <image src="/images/wait.png" class="wait" mode="widthFix"></image>
+        </block>
+        <block wx:else>
+          <image src="/images/complete.png" class="wait" mode="widthFix"></image>
+        </block>
+      </block>
+      <block wx:else>
+        <image src="/images/complete.png" class="wait" mode="widthFix"></image>
+      </block>
+      <block wx:if="{{u_rank == '1'}}">
+        <block wx:if="{{item.ad_state != '1'}}">
+          <view class="demo_del" bindtap="deleteRequest" data-adid="{{item.ad_Id}}">删除</view>
+        </block>
+      </block>
+    </scroll-view>
+  </view>
+</block>

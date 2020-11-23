@@ -1,0 +1,106 @@
+<view class="btn_box">
+  <view class="btn" wx:for="{{labs}}" bindtap="btnClick" data-lid="{{item.l_Id}}">{{item.l_name}}     </view>
+  <view class="demo"></view>
+</view>
+<view class="courseTable">
+  <view class="tr1">
+    <view class="th1">节次/时间</view>
+    <view class="th">星期一</view>
+    <view class="th">星期二</view>
+    <view class="th">星期三</view>
+    <view class="th">星期四</view>
+    <view class="th">星期五</view>
+    <view class="th">星期六</view>
+    <view class="th">星期日</view>
+  </view>
+  <view class="tr2">
+    <view class="two">
+      <view class="td1">上</view>
+      <view class="td3">第一大节</view>
+    </view>
+    <view class="one">
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{one.mon}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{one.tue}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{one.wed}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{one.thurs}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{one.fri}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{one.sat}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{one.sun}}</text></view>
+    </view>
+  </view>
+  <view class="tr3">
+    <view class="two">
+      <view class="td2">午</view>
+      <view class="td3">第二大节</view>
+    </view>
+    <view class="one">
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{two.mon}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{two.tue}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{two.wed}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{two.thurs}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{two.fri}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{two.sat}}</text></view>
+      <view class="td" style="background-color: {{colorArr[1]}}"><text>{{two.sun}}</text></view>
+    </view>
+  </view>
+  <view class="tr4">
+    <view class="two">
+      <view class="td1">下</view>
+      <view class="td3">第三大节</view>
+    </view>
+    <view class="one">
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{three.mon}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{three.tue}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{three.wed}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{three.thurs}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{three.fri}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{three.sat}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{three.sun}}</text></view>
+    </view>
+  </view>
+  <view class="tr5">
+    <view class="two">
+      <view class="td2">午</view>
+      <view class="td3">第四大节</view>
+    </view>
+    <view class="one">
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{four.mon}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{four.tue}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{four.wed}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{four.thurs}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{four.fri}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{four.sat}}</text></view>
+      <view class="td" style="background-color: {{colorArr[2]}}"><text>{{four.sun}}</text></view>
+    </view>
+  </view>
+  <view class="tr6">
+    <view class="two">
+      <view class="td1">晚</view>
+      <view class="td3">第五大节</view>
+    </view>
+    <view class="one">
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{five.mon}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{five.tue}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{five.wed}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{five.thurs}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{five.fri}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{five.sat}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{five.sun}}</text></view>
+    </view>
+  </view>
+  <view class="tr7">
+    <view class="two">
+      <view class="td2">上</view>
+      <view class="td3">第六大节</view>
+    </view>
+    <view class="one">
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{six.mon}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{six.tue}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{six.wed}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{six.thurs}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{six.fri}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{six.sat}}</text></view>
+      <view class="td" style="background-color: {{colorArr[4]}}"><text>{{six.sun}}</text></view>
+    </view>
+  </view>
+</view>

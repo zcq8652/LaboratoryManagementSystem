@@ -1,0 +1,6 @@
+/* pages/hygieneIndex/hygieneIndex.wxss */
+.comment-img{
+  width: 29%;
+  height: 160rpx;
+  margin: 2.1%;
+}

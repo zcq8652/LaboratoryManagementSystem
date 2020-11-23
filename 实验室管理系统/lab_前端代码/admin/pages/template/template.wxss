@@ -1,0 +1,39 @@
+.bottom{
+  width: 100%;
+  height: 100rpx;
+  background-color: powderblue;
+  text-align: center;
+  line-height: 100rpx;
+}
+.txt4{
+  font-family: cursive;
+  font-size: 25rpx;
+  color: #fff;
+}
+.register_txt{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  font-size: 30rpx;
+  color: #1296db;
+}
+.l_bot{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1rpx solid #ccc;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.stu_bot, .tea_bot, .adm_bot{
+  width: 33%;
+  height: 100rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 100rpx;
+}
+.l_bot text{
+  font-size: 28rpx;
+  color: #707070;
+}

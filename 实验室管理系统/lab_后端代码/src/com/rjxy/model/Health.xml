@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rjxy.model.Health">
+	<select id="list" resultType="com.rjxy.model.Health">
+		select * from t_health order by h_Id desc
+	</select>
+	<insert id="add" parameterType="com.rjxy.model.Health">
+		<!-- 添加数据的时候立即返回主键 -->
+		<selectKey keyProperty="h_Id" resultType="int" order="AFTER">
+			select LAST_INSERT_ID()
+		</selectKey>
+		insert into t_health(h_u_Id,h_u_name,h_content,h_time) values(#{h_u_Id},#{h_u_name},#{h_content},#{h_time})
+	</insert>
+	<delete id="delete" parameterType="int">
+		delete from t_health where h_Id=#{h_Id}
+	</delete>
+	<delete id="deleteAll">
+		delete from t_health
+	</delete>
+</mapper>

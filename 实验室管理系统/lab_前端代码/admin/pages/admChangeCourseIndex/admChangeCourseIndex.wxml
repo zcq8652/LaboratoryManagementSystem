@@ -1,0 +1,54 @@
+<block wx:if="{{u_rank == '0'}}">
+  <view>申请人：{{adjusts.t_name}}</view>
+  <view>申请人工号：{{adjusts.u_Id}}</view>
+  <view>申请日期：{{adjusts.aa_date}}</view>
+  <view>申请内容：{{adjusts.aa_content}}</view>
+</block>
+<block wx:else>
+  <view>申请人：{{adjusts.t_name}}</view>
+  <view>申请人工号：{{adjusts.t_Id}}</view>
+  <view>申请日期：{{adjusts.ad_date}}</view>
+  <view>申请内容：{{adjusts.ad_content}}</view>
+</block>
+<block wx:if="{{sign == '2'}}">
+  <view>审核结果：待教学院长审核中</view>
+</block>
+<block wx:elif="{{sign == '1'}}">
+  <view>审核结果：待实验室主任审核中</view>
+</block>
+<block wx:elif="{{sign == '0'}}">
+  <view>审核结果：已通过</view>
+</block>
+<block wx:else>
+  <view>审核结果：未通过</view>
+</block>
+<block wx:if="{{u_rank == '2'}}">
+  <block wx:if="{{sign == '2'}}">
+    <button type="primary" size="mini" style="margin-right: 10rpx;" bindtap="agree">同意</button>
+    <button style="background-color: red; color: #fff;" size="mini" bindtap="notAgree">不同意</button>
+  </block>
+</block>
+<block wx:elif="{{u_rank == '1'}}">
+  <block wx:if="{{sign == '1'}}">
+    <view class="section section_gap">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <radio class="radio" wx:for-items="{{items}}" wx:key="{{item.name}}" value="{{item.value}}" checked="{{item.checked}}">
+          <text>{{item.value}}</text>
+        </radio>
+      </radio-group>
+    </view>
+    <view class="section" hidden="{{sectionShow}}">
+      <view class="section__title">请选择要推送的实验室</view>
+      <picker bindchange="bindPickerChange" value="{{labs[isLabName].value}}" range="{{labs}}" range-key="{{'l_name'}}">
+        <view class="picker">
+          当前选择：{{labs[isLabName].l_name}}
+        </view>
+      </picker>
+    </view>
+    <button type="primary" size="mini" style="margin-right: 10rpx;" bindtap="zhuren_sure">确认</button>
+  </block>
+</block>
+<block wx:else>
+
+</block>
+

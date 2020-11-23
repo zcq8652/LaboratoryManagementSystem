@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rjxy.model.Safe">
+	<select id="list" resultType="com.rjxy.model.Safe">
+		select * from t_safe order by sf_Id desc
+	</select>
+	<insert id="add" parameterType="com.rjxy.model.Safe">
+		insert into t_safe(sf_u_Id,sf_u_name,sf_time,sf_result) values(#{sf_u_Id},#{sf_u_name},#{sf_time},#{sf_result})
+	</insert>
+	<delete id="delete" parameterType="int">
+		delete from t_safe where sf_Id=#{sf_Id}
+	</delete>
+	<delete id="deleteAll">
+		delete from t_safe
+	</delete>
+</mapper>

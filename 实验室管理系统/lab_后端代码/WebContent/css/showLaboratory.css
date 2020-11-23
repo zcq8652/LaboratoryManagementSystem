@@ -1,0 +1,65 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	width: 100%;
+}
+.top{
+	width: 100%;
+	height: 40px;
+	background-color: #f2f2f2;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.topText{
+	font-size: 13px;
+	color: #585858;
+}
+.center{
+	position: relative;
+}
+.centerText{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-size: 16px;
+	color: #0081b8;
+}
+.main{
+	position: absolute;
+	top: 45px;
+	left: 15px;
+	width: 97%;
+	height: 800px;
+	border: 1px solid #0081b8;
+	background: #fff;
+	z-index: 1;
+}
+.item{
+	position: relative;
+	width: 99.8%;
+	height: 40px;
+	border: 1px solid #DCEBF7;
+	background: #EDF3F4;
+}
+.updateBtn, .deleteBtn{
+	position: absolute;
+	top: 7.5px;
+	right: 80px;
+	width: 60px;
+	height: 25px;
+	background-color: #0081b8;
+	border: 1px solid #0081b8;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.updateBtn{
+	width: 90px;
+}
+.deleteBtn{
+	right: 10px;
+	background-color: red;
+	border: 1px solid red;
+}

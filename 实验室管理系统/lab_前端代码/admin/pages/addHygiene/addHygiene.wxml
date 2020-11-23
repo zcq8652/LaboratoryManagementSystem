@@ -1,0 +1,23 @@
+<view class="h_all">
+  <form class="hygieneForm" bindsubmit="formSubmit">
+    <view class="name_part">
+      <view class="name_txt">记录人</view>
+      <input class="u_name" disabled name="u_name" value="{{u_name}}"></input>
+    </view>
+    <view class="id_part">
+      <view class="id_txt">记录人账号</view>
+      <input class="u_id" disabled name="u_Id" value="{{u_Id}}"></input>
+    </view>
+    <view class="content_part">
+      <view class="content_txt">大扫除记录</view>
+      <textarea class="u_content" name="h_content" placeholder="请在此输入..." placeholder-style="font-size:30rpx;"></textarea> 
+    </view>
+    <view class="picture_part">
+      <button class="onloadPic" bindtap="upLoadImg" size="mini">上传照片</button>
+      <view>
+        <image src="{{item}}" wx:for="{{images}}" wx:key="{{index}}" class="comment-img"></image>
+      </view>
+    </view>
+    <button form-type="submit" class="btn">提交</button>
+  </form>
+</view>

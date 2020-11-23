@@ -1,0 +1,18 @@
+/* pages/location/location.wxss */
+.sign_in, .sign_out{
+  position: absolute;
+  top: 70%;
+  right: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: green;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.sign_out{
+  top: 80%;
+  background-color: orange;
+}

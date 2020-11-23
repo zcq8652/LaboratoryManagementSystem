@@ -1,0 +1,3 @@
+<view>申请人：{{adminAdjusts.t_name}}</view>
+<view>申请日期：{{adminAdjusts.aa_date}}</view>
+<view>申请内容：{{adminAdjusts.aa_content}}</view>

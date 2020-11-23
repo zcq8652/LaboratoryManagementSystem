@@ -1,0 +1,4 @@
+<view>检查人：{{safe.data.sf_u_name}}</view>
+<view>检查人工号：{{safe.data.sf_u_Id}}</view>
+<view>检查日期：{{safe.data.sf_time}}</view>
+<view>检查结果：{{safe.data.sf_result}}</view>

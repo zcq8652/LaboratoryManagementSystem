@@ -1,0 +1,26 @@
+<text class="pub_txt">已发申请</text>
+<image src="/images/changeCourse.png" class="pub_img1"></image>
+<navigator url="/pages/changeCourseAdd/changeCourseAdd"><image src="/images/noticeadd.png" class="notice_add"></image></navigator>
+<view class="admNotice_blue_bar"></view>
+<view class="admNotice_demo">
+    <scroll-view class="admNotice_scroll" scroll-x="true" wx:for="{{tas}}">
+      <view class="demo" hover-class="demo_hover" hover-stop-propagation bindtap="queryItemClick" data-text="{{item}}">
+        <view class="demo_txt1"><text decode="true">&emsp;&emsp;{{item.ta_content}}</text></view>
+        <view class="demo_txt2">申请日期：{{item.ta_date}}</view>
+      </view>
+      <block wx:if="{{item.ta_state == '2'}}">
+        <image src="/images/wait.png" class="wait" mode="widthFix"></image>
+      </block>
+      <block wx:elif="{{item.ta_state == '1'}}">
+        <image src="/images/wait.png" class="wait" mode="widthFix"></image>
+      </block>
+      <block wx:elif="{{item.ta_state == '0'}}">
+        <image src="/images/complete.png" class="wait" mode="widthFix"></image>
+        <view class="demo_del" bindtap="deleteRequest" data-taid="{{item.ta_Id}}">删除</view>
+      </block>
+      <block wx:else>
+        <image src="/images/complete.png" class="wait" mode="widthFix"></image>
+        <view class="demo_del" bindtap="deleteRequest" data-taid="{{item.ta_Id}}">删除</view>
+      </block>
+    </scroll-view>
+</view>

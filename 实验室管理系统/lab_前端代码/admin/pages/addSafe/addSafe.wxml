@@ -1,0 +1,17 @@
+<view class="all">
+  <form class="safeForm" bindsubmit="formSubmit">
+    <view class="name_part">
+      <view class="name_txt">检查人</view>
+      <input class="u_name" disabled name="sf_u_name" value="{{u_name}}"></input>
+    </view>
+    <view class="id_part">
+      <view class="id_txt">检查人账号</view>
+      <input class="u_id" disabled name="sf_u_Id" value="{{u_Id}}"></input>
+    </view>
+    <view class="content_part">
+      <view class="content_txt">检查结果</view>
+      <textarea class="u_content" name="sf_result" placeholder="请在此输入..." placeholder-style="font-size:30rpx;"></textarea> 
+    </view>
+    <button form-type="submit" class="btn">提交</button>
+  </form>
+</view>

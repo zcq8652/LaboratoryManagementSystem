@@ -1,0 +1,16 @@
+<text class="pub_txt">安全记录</text>
+<image src="/images/safe.png" class="pub_img1"></image>
+<navigator url="/pages/addSafe/addSafe"><image src="/images/noticeadd.png" class="notice_add"></image></navigator>
+<view class="admNotice_blue_bar"></view>
+<view class="admNotice_demo">
+    <scroll-view class="admNotice_scroll" scroll-x="true" wx:for="{{safeArr}}">
+      <view class="demo" hover-class="demo_hover" hover-stop-propagation bindtap="queryItemClick" data-text="{{item}}">
+        <view class="demo_txt1"><text decode="true">&emsp;&emsp;{{item.sf_result}}</text></view>
+        <view class="demo_txt2">检查日期：{{item.sf_time}}</view>
+      </view>
+      <block wx:if="{{u_rank == '1'}}">
+        <view class="demo_del" bindtap="deleteSafe" data-sid="{{item.sf_Id}}">删除</view>
+      </block>
+    </scroll-view>
+</view>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper	namespace="com.rjxy.model.Schedule">
+	<insert id="add" parameterType="com.rjxy.model.Schedule">
+		insert into t_schedule(mon,tue,wed,thurs,fri,sat,sun,l_Id) values(#{mon},#{tue},#{wed},#{thurs},#{fri},#{sat},#{sun},#{l_Id})
+	</insert>
+	<select id="listId" parameterType="String" resultType="com.rjxy.model.Schedule">
+		select * from t_schedule where l_Id=#{l_Id}
+	</select>
+</mapper>

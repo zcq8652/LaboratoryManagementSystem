@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rjxy.model.AdminAdjust">
+	<insert id="add" parameterType="com.rjxy.model.AdminAdjust">
+		insert into t_a_adjust(t_name,aa_content,aa_date,aa_state,u_Id,ad_state) values(#{t_name},#{aa_content},#{aa_date},#{aa_state},#{u_Id},#{ad_state})
+	</insert>
+	<delete id="delete" parameterType="int">
+		delete from t_a_adjust where aa_Id=#{aa_Id}
+	</delete>
+	<update id="update" parameterType="com.rjxy.model.AdminAdjust">
+		update t_a_adjust set aa_state=#{aa_state} where aa_Id=#{aa_Id}
+	</update>
+	<select id="listId" parameterType="String" resultType="com.rjxy.model.AdminAdjust">
+		select * from t_a_adjust where u_Id=#{u_Id} order by aa_Id desc
+	</select>
+</mapper>

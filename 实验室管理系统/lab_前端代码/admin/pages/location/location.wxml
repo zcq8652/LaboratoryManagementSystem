@@ -1,0 +1,3 @@
+<map id="map" longitude="112.585" latitude="37.422" scale="16" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 100vh;"></map>
+<view class="sign_in" bindtap="signInSubmit" data-sin="{{sin}}">签到</view>
+<view class="sign_out" bindtap="signOutSubmit" data-sout="{{sout}}">签退</view>

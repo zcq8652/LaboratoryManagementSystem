@@ -1,0 +1,8 @@
+<view>记录人：{{hygiene.data.h_u_name}}</view>
+<view>记录人工号：{{hygiene.data.h_u_Id}}</view>
+<view>记录日期：{{hygiene.data.h_time}}</view>
+<view>大扫除记录：{{hygiene.data.h_content}}</view>
+<view>大扫除照片：</view>
+<view>
+  <image src="{{item}}" wx:for="{{hygiene.data.imgsPath}}" wx:key="{{index}}" class="comment-img" bindtap="showImg"></image>
+</view>

@@ -1,0 +1,14 @@
+<import src="/pages/template/template"/>
+<template is="lr_header"/>
+<view class="center">
+  <view class="l_tit">欢迎登录实验室管理平台</view>
+  <image src="/images/admin.png" class="stu_img"></image>
+  <view class="stu_txt">管 理 员</view>
+  <form bindsubmit="formSubmit">
+    <input type="text" placeholder="工号" class="stu_num" name="adm_name"></input>
+    <input type="text" password placeholder="密码" class="stu_pas" name="adm_password"></input>
+    <button class="l_btn" form-type="submit">登录</button>
+  </form>
+  <text wx:if="{{error}}" class="errMsg">{{error}}</text>
+  <view class="forget_pass">忘记密码？</view>
+</view>

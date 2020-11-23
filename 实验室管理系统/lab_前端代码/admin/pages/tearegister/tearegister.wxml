@@ -1,0 +1,12 @@
+<import src="/pages/template/template"/>
+<view class="center">
+  <view class="r_tit">创建教师端账号</view>
+  <form bindsubmit="formSubmit">
+    <input type="text" placeholder="工号" class="stu_id" name="tea_id"></input>
+    <input type="text" placeholder="姓名" class="stu_num" name="tea_name"></input>
+    <input type="text" password placeholder="密码" class="stu_pas" name="tea_password"></input>
+    <button class="r_btn" form-type="submit">注册</button>
+  </form>
+  <text wx:if="{{error}}" class="errMsg">{{error}}</text>
+</view>
+<template is="r_bottom"/>

@@ -1,0 +1,13 @@
+<view name="header">
+  <view class="top">
+    <view class="title">实验中心</view>
+    <view class="titEng">LABORATORY CENTER</view>
+    <!--<image src="/images/kefu.png" class="kefu_img"></image>-->
+    <image src="/images/yonghu.png" class="yonghuImg"></image>
+    <view class="kefu_img" bindtap="hiddenAndShow">{{u_name}}</view>
+    <view class="hidBox" hidden="{{sign}}">
+      <image src="/images/kuang2.png" class="kuang2"></image>
+      <navigator url="/pages/changePassword/changePassword"><view class="change_pas">修改密码</view></navigator>
+    </view>
+  </view>
+</view>

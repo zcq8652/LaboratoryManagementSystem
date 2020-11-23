@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/teacher/teacher",
+    "pages/admin/admin",
+    "pages/stulogin/stulogin",
+    "pages/tealogin/tealogin",
+    "pages/admlogin/admlogin",
+    "pages/student/student",
+    "pages/template/template",
+    "pages/sturegister/sturegister",
+    "pages/tearegister/tearegister",
+    "pages/admregister/admregister",
+    "pages/notice/notice",
+    "pages/admNotice/admNotice",
+    "pages/index/index",
+    "pages/addNotice/addNotice",
+    "pages/fault/fault",
+    "pages/admFault/admFault",
+    "pages/addFault/addFault",
+    "pages/faultIndex/faultIndex",
+    "pages/courseTable/courseTable",
+    "pages/safe/safe",
+    "pages/safeIndex/safeIndex",
+    "pages/addSafe/addSafe",
+    "pages/hygiene/hygiene",
+    "pages/hygieneIndex/hygieneIndex",
+    "pages/addHygiene/addHygiene",
+    "pages/location/location",
+    "pages/admLocation/admLocation",
+    "pages/changeCourse/changeCourse",
+    "pages/changeCourseAdd/changeCourseAdd",
+    "pages/admChangeCourse/admChangeCourse",
+    "pages/admChangeCourseIndex/admChangeCourseIndex",
+    "pages/admChangeCourseIndex2/admChangeCourseIndex2",
+    "pages/changeCourseIndex/changeCourseIndex",
+    "pages/component/component",
+    "pages/changePassword/changePassword"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "学生登录",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/stulogin/stulogin",
+        "text": "学生登录",
+        "iconPath": "images/stu.png",
+        "selectedIconPath": "images/stu1.png"
+      },
+      {
+        "pagePath": "pages/tealogin/tealogin",
+        "text": "教师登录",
+        "iconPath": "images/tea.png",
+        "selectedIconPath": "images/tea1.png"
+      },
+      {
+        "pagePath": "pages/admlogin/admlogin",
+        "text": "管理员登录",
+        "iconPath": "images/adm.png",
+        "selectedIconPath": "images/adm1.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

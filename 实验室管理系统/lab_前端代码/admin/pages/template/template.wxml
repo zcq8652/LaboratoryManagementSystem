@@ -1,0 +1,22 @@
+<template name="footer">
+  <view class="bottom">
+      <view class="txt4">Copyright © 2020 木头人</view>
+  </view>
+</template>
+<template name="lr_header">
+  <navigator class="register_txt" url="/pages/sturegister/sturegister">注册</navigator>
+</template>
+<template name="r_bottom">
+  <view class="l_bot">
+    <navigator open-type="redirect" url="/pages/sturegister/sturegister" class="stu_bot">
+      <text>学生注册</text>
+    </navigator>
+    <navigator open-type="redirect" url="/pages/tearegister/tearegister" class="tea_bot">
+      <text>教师注册</text>
+    </navigator>
+    <navigator open-type="redirect" url="/pages/admregister/admregister" class="adm_bot">
+      <text>管理员注册</text>
+    </navigator>
+  </view>
+</template>
+

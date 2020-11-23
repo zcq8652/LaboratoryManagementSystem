@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "component-tag-name": "/pages/component/component"
+  },
+  "navigationBarTitleText": "实验室管理平台",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#7a8c8d"
+}

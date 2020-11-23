@@ -1,0 +1,18 @@
+<text class="pub_txt">公告</text>
+<image src="/images/pub_img.png" class="pub_img1"></image>
+<navigator url="/pages/addNotice/addNotice">
+  <image src="/images/noticeadd.png" class="notice_add"></image>
+</navigator>
+<view class="admNotice_blue_bar"></view>
+<view class="admNotice_demo">
+    <scroll-view class="admNotice_scroll" scroll-x="true" wx:for="{{noticeArr}}">
+      <view class="demo" hover-class="demo_hover" hover-stop-propagation bindtap="queryItemClick" data-text="{{item.n_content}}">
+        <view class="demo_txt1"><text decode="true">&emsp;&emsp;{{item.n_content}}</text></view>
+        <view class="demo_txt2">发布日期：{{item.n_date}}</view>
+      </view>
+      <block wx:if="{{u_rank == '1'}}">
+        <view class="demo_del" bindtap="deleteNotice" data-nid="{{item.n_Id}}">删除</view>
+      </block>
+    </scroll-view>
+</view>
+

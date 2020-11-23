@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rjxy.model.Notice">
+	<select id="list" resultType="com.rjxy.model.Notice">
+		select * from t_notice order by n_Id desc
+	</select>
+	<insert id="add" parameterType="com.rjxy.model.Notice">
+		insert into t_notice(a_name,n_content,n_date) values(#{a_name},#{n_content},#{n_date})
+	</insert>
+	<delete id="delete" parameterType="int">
+		delete from t_notice where n_Id=#{n_Id}
+	</delete>
+	<delete id="deleteAll">
+		delete from t_notice
+	</delete>
+</mapper>

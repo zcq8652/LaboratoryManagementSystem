@@ -1,0 +1,8 @@
+@import "/pages/template/template";
+@import "/pages/admin/admin";
+.d_txt4{
+  margin-left: 30rpx;
+}
+.d_txt6{
+  margin-left: 70rpx;
+}

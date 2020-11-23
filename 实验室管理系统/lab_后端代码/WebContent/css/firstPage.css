@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.all{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.top{
+	width: 100%;
+	height: 40px;
+	/*border: 1px solid #ccc;*/
+	background-color: #f2f2f2;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.topImg{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 5px;
+}
+.topText{
+	font-size: 13px;
+	color: #585858;
+}
+.teacher, .shebei, .student{
+	position: absolute;
+	border: 1px solid #ccc;
+}
+.teacher{
+	top: 55px;
+	left: 15px;
+	width: 48%;
+	height: 250px;
+}
+.shebei{
+	top: 55px;
+	left: 50.3%;
+	width: 48%;
+	height: 150px;
+}
+.student{
+	top: 315px;
+	left: 15px;
+	width: 48%;
+	height: 200px;
+}
+.teacherText, .shebeiText, .studentText{
+	font-size: 15px;
+	margin-left: 10px;
+	color: #2c4a5e;
+	float: left;
+}
+.gang{
+	position: absolute;
+	top: 5px;
+	left: 90%;
+	width: 0px;
+	height: 30px;
+	border: 0.5px solid #ccc;
+}
+.f_img{
+	position: absolute;
+	top: 3px;
+	left: 91.5%;
+	width: 45px;
+	height: 30px;
+	/*border: 1px solid black;*/
+	overflow: hidden;
+}
+.tableImg, .newImg{
+	width: 18px;
+	height: 18px;
+}

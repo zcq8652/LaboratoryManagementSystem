@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rjxy.model.Lab">
+	<select id="list" resultType="com.rjxy.model.Lab">
+		select * from t_lab
+	</select>
+		<select id="load" resultType="com.rjxy.model.Lab" parameterType="String">
+		select * from t_lab where l_Id=#{l_Id}
+	</select>
+	<insert id="addLab" parameterType="com.rjxy.model.Lab">
+		insert into t_lab(l_Id,l_name,l_location,a_Id) values(#{l_Id},#{l_name},#{l_location},#{a_Id})
+	</insert>
+	<update id="updatea_id" parameterType="com.rjxy.model.Lab">
+		update t_lab set a_Id=#{a_Id} where l_Id=#{l_Id}
+	</update>
+</mapper>

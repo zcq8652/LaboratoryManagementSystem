@@ -1,0 +1,2 @@
+/* pages/addFault/addFault.wxss */
+@import '/pages/fault/fault';

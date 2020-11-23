@@ -1,0 +1,70 @@
+@import "/pages/template/template";
+.center{
+  position: relative;
+  top: 180rpx;
+  width: 100%;
+  height: 900rpx;
+  
+}
+.l_tit{
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  height: 50rpx;
+  font-size: 40rpx;
+  border-bottom: 2px solid #1296db;
+  text-align: center;
+}
+.stu_num, .stu_pas{
+  position: absolute;
+  top: 350rpx;
+  left: 10%;
+  width: 80%;
+  height: 100rpx;
+  border-radius: 6px;
+  border: 2px solid #f5f5f5;
+  border-bottom: 2px solid #1296db;
+  text-align: center;
+}
+.stu_pas{
+  top: 470rpx;
+}
+.l_btn{
+  position: absolute;
+  top: 650rpx;
+  left: 24%;
+  background-color: #1296db;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+}
+.stu_img{
+  position: absolute;
+  top: 100rpx;
+  left: 41.5%;
+  width: 130rpx;
+  height: 130rpx;
+}
+.stu_txt{
+  position: absolute;
+  top: 240rpx;
+  width: 100%;
+  height: 30rpx;
+  text-align: center;
+  font-size: 38rpx;
+}
+.forget_pass{
+  position: absolute;
+  top: 750rpx;
+  width: 100%;
+  height: 30rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #1296db;
+}
+.errMsg{
+  position: absolute;
+  top: 605rpx;
+  left: 40%;
+  color: red;
+}

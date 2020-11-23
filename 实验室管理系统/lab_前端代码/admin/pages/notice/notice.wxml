@@ -1,0 +1,9 @@
+<text class="pub_txt">公告</text>
+<image src="/images/pub_img.png" class="pub_img1"></image>
+<view class="admNotice_blue_bar"></view>
+<view class="demo_fa">
+  <view class="demo" hover-class="demo_hover" hover-stop-propagation bindtap="queryItemClick" wx:for="{{noticeArr}}" data-text="{{item.n_content}}">
+    <view class="demo_txt1"><text decode="true">&emsp;&emsp;{{item.n_content}}</text></view>
+    <view class="demo_txt2">发布日期：{{item.n_date}}</view>
+  </view>
+</view>
